@@ -1,8 +1,8 @@
 # Run rclone sync periodically in docker
 
-Dockerized version of [rclone](https://rclone.org/) used to run one-time and/or periodic sync's.
+Dockerized version of [rclone](https://rclone.org/) used to run periodic sync's with lernsax and our google drive.
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/traumfewo/docker-rclone.svg)](https://hub.docker.com/r/traumfewo/docker-rclone/)
+Inspired by [https://github.com/traum-ferienwohnungen/docker-rclone](https://github.com/traum-ferienwohnungen/docker-rclone)
 
 
 ## Usage
