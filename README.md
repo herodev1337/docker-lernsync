@@ -12,9 +12,8 @@ Use the image as if you would run `rclone sync` direcly and it will re-run your 
 For example:
 ```bash
 docker run -e SYNC_INTERVAL_SECONDS=10 \
-  -v /gcs-serviceaccount.json:/gcs-serviceaccount.json:ro \
-  -v /tmp/foo/:/tmp/foo/ \
-  --name rclone \
-  traumfewo/docker-rclone \
-  --gcs-service-account-file /gcs-serviceaccount.json sync :gcs:BUCKET-NAME/BUCKET-DIR/ /tmp/foo/
+  -v ~/.config/rclone/rclone.conf/:~/.config/rclone/rclone.conf \
+  --name lernsync \
+  herodev/docker-lernsync \
+  copy lernsax: "lerndrive:/Lernglossar/Lernsax Mirror/" -P --exclude="b.heichel@bsz7.lernsax.de/" --check-first --error-on-no-transfer
 ```
