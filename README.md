@@ -15,5 +15,5 @@ docker run -e SYNC_INTERVAL_SECONDS=10 \
   -v ~/.config/rclone/rclone.conf/:~/.config/rclone/rclone.conf \
   --name lernsync \
   herodev/docker-lernsync \
-  copy lernsax: "lerndrive:/Lernglossar/Lernsax Mirror/" -P --exclude="b.heichel@bsz7.lernsax.de/" --check-first --error-on-no-transfer
+  copy <a> <b>
 ```
